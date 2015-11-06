@@ -8,8 +8,8 @@ content:
     items: @self.modular
     order:
         by: default
-        dir: asc
+        dir: desc
         custom:
             - _header
-            - _about         
+            - _about
 ---

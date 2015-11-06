@@ -1,7 +1,7 @@
 absolute_urls: false
 
 home:
-  alias: '/'
+  alias: '/home'
 
 pages:
   theme: asn
@@ -18,7 +18,7 @@ cache:
   prefix: 'g'
 
 twig:
-  cache: true
+  cache: false
   debug: true
   auto_reload: true
   autoescape: false
