@@ -1,17 +1,17 @@
 absolute_urls: false
 
 home:
-  alias: '/home'
+  alias: '/'
 
 pages:
-  theme: antimatter
+  theme: asn
   markdown_extra: false
   process:
     markdown: true
     twig: false
 
 cache:
-  enabled: true
+  enabled: false
   check:
     method: file
   driver: auto
@@ -24,18 +24,18 @@ twig:
   autoescape: false
 
 assets:
-  css_pipeline: false
-  css_minify: true
-  css_rewrite: true
-  js_pipeline: false
-  js_minify: true
+  css_pipeline: false                  # The CSS pipeline is the unification of multiple CSS resources into one file
+  css_minify: true                     # Minify the CSS during pipelining
+  css_rewrite: true                    # Rewrite any CSS relative URLs during pipelining
+  js_pipeline: false                   # The JS pipeline is the unification of multiple JS resources into one file
+  js_minify: true                      # Minify the JS during pipelining
 
 errors:
   display: true
   log: true
 
 debugger:
-  enabled: false
+  enabled: true
   twig: true
   shutdown:
     close_connection: true

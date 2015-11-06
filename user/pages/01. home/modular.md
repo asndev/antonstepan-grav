@@ -1,0 +1,15 @@
+---
+title: Asn
+menu: home
+onpage_menu: true
+body_class: index
+header_class: alt
+content:
+    items: @self.modular
+    order:
+        by: default
+        dir: asc
+        custom:
+            - _header
+            - _about         
+---

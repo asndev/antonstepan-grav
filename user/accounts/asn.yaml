@@ -1,0 +1,10 @@
+email: hi@antonstepan.de
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+fullname: 'Anton Stepan'
+title: asn
+hashed_password: $2y$10$sD/.Q4fz5UKI8T9U.H8RleOV.4RItCymF/m0D9dZnIHwLPM5QlDuS
