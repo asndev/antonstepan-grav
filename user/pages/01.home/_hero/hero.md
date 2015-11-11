@@ -1,5 +1,5 @@
 ---
-title: antonstepan Digital Services
+title: antonstepan
 showcase_image: hero-image.png
 ---
 

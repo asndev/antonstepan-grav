@@ -30,7 +30,6 @@
             </div>
         </div> -->
 
-        <div class="container">
         {% block header %}
              {% include 'partials/header.html.twig' %}
         {% endblock %}
@@ -42,7 +41,6 @@
         {% block footer %}
              {% include 'partials/footer.html.twig' %}
         {% endblock %}
-        </div>
 
         {% block javascripts %}
             {% do assets.add('jquery',101) %}
