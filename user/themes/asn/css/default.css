@@ -6,7 +6,51 @@
 @import url("normalize.css");
 @import url("skeleton.css");
 
+/* Overrides */
 
+header {
+  display: none;
+}
+
+hero {
+  position: relative;
+  left: 0;
+  z-index: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: gray;
+}
+
+hero .hero-bg {
+  background: linear-gradient(to right, #1EBA9C, #7A2487, #1EBA9C);
+  height: 100vh;
+}
+
+.default-column {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  width: 100%;
+  float: left;
+  z-index: 2;
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+
+
+
+.bottom-arrow {
+  position: absolute;
+  z-index: 25;
+  bottom: 0.1em;
+  width: 60px;
+  height: 40px;
+  font-size: 0.5em;
+  display: block;
+  margin-left: calc(50% - 20px);
+
+  -webkit-animation: bounce 1.5s ease-in-out infinite;
+  animation: bounce 1.5s ease-in-out infinite;
+}
 
 /*  Clearing
     (http://nicolasgallagher.com/micro-clearfix-hack/

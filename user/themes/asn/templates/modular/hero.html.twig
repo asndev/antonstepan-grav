@@ -1,22 +1,15 @@
-<section id="hero">
- <div class="row">
-   <div class="twelve columns">
-     <div class="hero-text">
-      <h1 class="responsive-headline">{{ page.header.title }}</h1>
-      {{ content }}
+<hero>
+  <div class="hero-bg">
+    <div class="row">
+      <div class="twelve columns default-column">
+        <div class="hero-text">
+          <h1 class="responsive-headline">{{ page.header.title }}</h1>
+          {{ content }}
+          <a class="bottom-arrow" href="#welcome">
+            <span class="bar"></span>
+          </a>
+        </div>
+      </div>
     </div>
-
-    {% if page.header.buttons %}
-     <div class="buttons">
-       {% for button in page.header.buttons %}
-         <a class="{{ button.class }}" href="{{ button.url }}">{{ button.text }}</a>
-       {% endfor %}
-     </div>
-   {% endif %}
-
-   <div class="hero-image">
-    {{ page.media[page.header.showcase_image].html() }}
   </div>
-</div>
-</div>
-</section>
+</hero>

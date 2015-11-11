@@ -11,5 +11,5 @@ content:
         dir: desc
         custom:
             - _header
-            - _about
+            - _welcome
 ---
