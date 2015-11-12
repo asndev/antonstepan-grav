@@ -13,6 +13,7 @@ header {
 }
 
 hero {
+  color: white;
   position: relative;
   left: 0;
   z-index: 1;
@@ -40,7 +41,16 @@ hero .hero-bg {
   flex: 2;
 }
 
+.hero-title img {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  border-radius: 50%;
+  margin-bottom: 2%;
+}
+
 .hero-title {
+  text-align: center;
   margin-right: 20%;
   margin-left: 20%;
   flex: 3;
@@ -48,6 +58,24 @@ hero .hero-bg {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.hero-title h1 {
+  text-rendering: optimizeLegibility;
+  font-family: 'nexa_lightregular';
+  letter-spacing: 9px;
+  font-size: 20px;
+}
+
+.hero-title h1 strong {
+  font-family: 'nexa_boldregular';
+  letter-spacing: -4px;
+  font-size: 3em;
+  line-height: 1em;
+}
+
+.hero-minimal {
+  font-size: 1em;
 }
 
 .default-column {

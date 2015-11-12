@@ -1,6 +1,6 @@
 ---
-title: antonstepan
-showcase_image: hero-image.png
+title: <strong>antonstepan</strong> </br>Digital Services
+image_src: asn.png
 ---
 
-Aenean condimentum, lacus sit amet luctus lobortis, dolores et quas molestias excepturi enim tellus ultrices elit, amet consequat enim elit noneas sit amet luctu. Quis nostrum exercitationem ullam corporis suscipit laboriosam.
+Konzeption // Entwicklung // Strategie

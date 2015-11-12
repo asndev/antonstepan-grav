@@ -2,12 +2,12 @@
   <div class="hero-bg">
     <div class="hero-spacer"></div>
     <div class="hero-title">
+      {{ page.media[page.header.image_src].html() }}
       <div class="hero-text">
         <h1 class="responsive-headline">{{ page.header.title }}</h1>
-        <h2 class="responsive-headline">Digital Services</h2>
       </div>
       <div class="flexcontainer">
-        {{content}}
+        <span class="hero-minimal">{{content}}</span>
       </div>
     </div>
     <a class="bottom-arrow" href="#welcome">
