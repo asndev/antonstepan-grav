@@ -3,6 +3,7 @@
  ------------------------------------------------------------------ */
 
 @import url("fonts.css");
+@import url("fontello/css/fontello.css");
 @import url("normalize.css");
 @import url("skeleton.css");
 
@@ -10,6 +11,23 @@
 
 header {
   display: none;
+}
+
+#content {
+  position: relative;
+  margin-bottom: 380px;
+  z-index: 150;
+}
+
+#welcome, #portfolio {
+  color: #16222A;
+  background-color: white;
+}
+
+.mighty-gradient {
+  background: #16222A;
+  background: -webkit-linear-gradient(to left, #16222A , #3A6073);
+  background: linear-gradient(to left, #16222A , #3A6073);
 }
 
 hero {
@@ -22,23 +40,28 @@ hero {
   background: gray;
 }
 
-hero .hero-bg {
-  /*background: linear-gradient(to right, #1EBA9C, #7A2487, #1EBA9C);*/
-  background: #5f357d;
-  background: -webkit-radial-gradient(circle farthest-corner at right bottom, #ffd08a 0%, #ffa376 28%, #d26578 52%, #682a84 79%, #241668 100%);
-  background: -moz-radial-gradient(circle farthest-corner at right bottom, #ffd08a 0%, #ffa376 28%, #d26578 52%, #682a84 79%, #241668 100%);
-  background: -o-radial-gradient(circle farthest-corner at right bottom, #ffd08a 0%, #ffa376 28%, #d26578 52%, #682a84 79%, #241668 100%);
-  background: -ms-radial-gradient(circle farthest-corner at right bottom, #ffd08a 0%, #ffa376 28%, #d26578 52%, #682a84 79%, #241668 100%);
-  background: radial-gradient(circle farthest-corner at right bottom, #ffd08a 0%, #ffa376 28%, #d26578 52%, #682a84 79%, #241668 100%);
+.full-section {
   width: 100%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
+.half-section {
+  width: 100%;
+  height: 50vh;
   display: flex;
   flex-direction: column;
 }
 
 .hero-spacer {
   flex: 2;
+}
+
+@media (max-width: 650px) {
+  .hero-spacer {
+    flex: 1;
+  }
 }
 
 .hero-title img {
@@ -60,6 +83,13 @@ hero .hero-bg {
   justify-content: center;
 }
 
+@media (max-width: 650px) {
+  .hero-title {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+}
+
 .hero-title h1 {
   text-rendering: optimizeLegibility;
   font-family: 'nexa_lightregular';
@@ -78,16 +108,20 @@ hero .hero-bg {
   font-size: 1em;
 }
 
-.default-column {
+.container {
+  padding: 6rem 0;
+}
+
+.row-default {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-  width: 100%;
-  float: left;
+  width: 85%;
   z-index: 2;
   position: relative;
   padding-bottom: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
 }
-
 
 
 .bottom-arrow {
@@ -98,10 +132,35 @@ hero .hero-bg {
   height: 40px;
   font-size: 0.5em;
   display: block;
-  margin-left: calc(50% - 20px);
+  margin-left: calc(50% - 15px);
 
-  -webkit-animation: bounce 1.5s ease-in-out infinite;
-  animation: bounce 1.5s ease-in-out infinite;
+  -webkit-animation: bounce 3s ease-in-out infinite;
+  animation: bounce 3s ease-in-out infinite;
+
+  color: white;
+  font-size: 1.2em;
+}
+
+.heading {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  z-index: 0;
+  bottom: 0px;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.copyright {
+  text-align: center;
+  color: white;
+  flex: 1;
 }
 
 /*  Clearing
