@@ -54,6 +54,12 @@ hero {
   flex-direction: column;
 }
 
+@media (max-width: 650px) {
+  .half-section {
+    height: 100vh;
+  }
+}
+
 .hero-spacer {
   flex: 2;
 }
@@ -123,7 +129,6 @@ hero {
   margin-left: auto;
 }
 
-
 .bottom-arrow {
   position: absolute;
   z-index: 25;
@@ -146,11 +151,19 @@ hero {
   padding-bottom: 1em;
 }
 
+#welcome .content {
+  font-size: 1.3em;
+}
+
 footer {
   position: fixed;
   width: 100%;
   z-index: 0;
   bottom: 0px;
+}
+
+footer a {
+  color: white;
 }
 
 .spacer {
@@ -161,6 +174,12 @@ footer {
   text-align: center;
   color: white;
   flex: 1;
+}
+
+@media (max-width: 650px) {
+  .copyright {
+    flex: 0.5;
+  }
 }
 
 /*  Clearing
